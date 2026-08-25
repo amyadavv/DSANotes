@@ -103,28 +103,6 @@ public class BinarySearch {
         }
         System.out.println("Max sum " + maxSubArraySum);
     }
-    
-    public static void prefix (int arr []) {
-
-        int prefixArr [] = new int [arr.length];
-        int maxSum = Integer.MIN_VALUE;
-
-        prefixArr[0] = arr[0];
-        for(int i=1; i<arr.length; i++) {
-            prefixArr[i] = prefixArr[i-1] + arr[i];
-        }
-
-        for(int i=0; i<arr.length; i++) {
-            int currSum = 0;
-            for(int j=0; j<arr.length; j++) {
-                currSum = i==0 ? prefixArr[j] : prefixArr[j] - prefixArr[i-1];
-            }
-            if(currSum > maxSum) {
-                maxSum = currSum;
-            }
-        }
-        System.out.println(maxSum);
-    }
 
     public static void kadanesAlgorithm (int arr[]) {
 
@@ -144,6 +122,13 @@ public class BinarySearch {
         System.out.println(maxSum);
     }
  
+// Kadane’s Algorithm is an algorithm used to find the maximum sum of a contiguous subarray within an array of numbers.The main idea is:
+
+// 1. Go through the array from left to right.
+// 2. Keep track of the current subarray sum.
+// 3. If continuing the current subarray gives a worse result (subArraySum in negative number) than starting fresh from the current element (taking subArraySum to 0), start a new subarray.
+// 4. Keep track of the maximum sum found so far.
+
 
     public static void main(String[] args) {
         int arr []  = {-2,-3,4,-1,-2,1,5,-3};
