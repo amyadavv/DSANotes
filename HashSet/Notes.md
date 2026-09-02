@@ -52,8 +52,14 @@ public class  Hashing {
 
         Iterator it = set.iterator();
 
+        while (it.hasNext()) {
+            System.out.println(it.next());
+            
+        }
+        // It makes no guarantees as to the iteration order of the set; in particular, it does not guarantee that the order will remain constant over time.
     }
 }
+
 
 ```
 
@@ -74,6 +80,7 @@ Iterator it = set.iterator();
 2. If the next points to some value then it will return true otherwise it will return false.
 3. Also the first time the it.next() points to null so in this case hasNext will return true.
 4. After 3 if we check hasNext then it will return false.
+5. It makes no guarantees as to the iteration order of the set; in particular, it does not guarantee that the order will remain constant over time. These are unordered. 
 
 To print all set elements: 
 

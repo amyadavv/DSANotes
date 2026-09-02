@@ -35,8 +35,10 @@ public class  Hashing {
 
         Iterator it = set.iterator();
 
-
-
-
+        while (it.hasNext()) {
+            System.out.println(it.next());
+            
+        }
+        // It makes no guarantees as to the iteration order of the set; in particular, it does not guarantee that the order will remain constant over time.
     }
 }
