@@ -64,6 +64,8 @@ public class tappingRainWater {
         int ans = trappedWater(arr);
         System.out.println(ans);
 
+        // Time complexity is O(n)
+
     }
 
 }
