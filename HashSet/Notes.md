@@ -60,7 +60,7 @@ public class  Hashing {
 # Iterator
 
 ## next
-Set = (1,2,3,4,5)
+Set = (1,2,3)
 Iterator it = set.iterator();
 
 1. First time it is point to null value.
@@ -70,3 +70,13 @@ Iterator it = set.iterator();
 
 ## hasNext
 
+1. It will return true or false 
+2. If the next points to some value then it will return true otherwise it will return false.
+3. Also the first time the it.next() points to null so in this case hasNext will return true.
+4. After 3 if we check hasNext then it will return false.
+
+To print all set elements: 
+
+while(it.hasNext()) {
+    print(it.next());
+}
