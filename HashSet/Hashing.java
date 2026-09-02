@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class  Hashing {
     public static void main (String args[]) {
@@ -30,7 +31,9 @@ public class  Hashing {
             System.out.println("Does not Contains 1 ");
         }
 
-        // Special Iterator because we cannot use for loop, there is no index of set elements. 
+        // Special Iterator because we cannot use for loop, there is no index of set elements. Used for sets and HashMaps
+
+        Iterator it = set.iterator();
 
 
 
