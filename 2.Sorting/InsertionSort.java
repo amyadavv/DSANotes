@@ -11,8 +11,10 @@ public class InsertionSort {
                 arr[prev + 1] = arr[prev];
                 prev--;
             }
+            arr[prev + 1] = curr;
         }
     }
+
     public static void main(String[] args) {
         int arr[] = {4, 3, 2, 5, 1};
         InsertionSort(arr);
