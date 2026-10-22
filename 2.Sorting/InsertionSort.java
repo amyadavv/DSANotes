@@ -24,3 +24,5 @@ public class InsertionSort {
         }
     }
 }
+
+// Time complexity is Big O(n)2 (Selection, Bubble and Insertion)
